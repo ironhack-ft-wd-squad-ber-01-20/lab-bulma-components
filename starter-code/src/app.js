@@ -1,5 +1,36 @@
 import React from "react";
 
+let buttonlist = {
+    isActive: 'is-active',
+    isBlack: 'is-black',
+    isCentered: 'is-centered',
+    isDanger: 'is-danger',
+    isDark: 'is-dark',
+    isFocused: 'is-focused',
+    isGrouped: 'is-grouped',
+    isHovered: 'is-hovered',
+    isInfo: 'is-info',
+    isInverted: 'is-inverted',
+    isLarge: 'is-large',
+    isLight: 'is-light',
+    isLink: 'is-link',
+    isLoading: 'is-loading',
+    isMedium: 'is-medium',
+    isOutlined: 'is-outlined',
+    isPrimary: 'is-primary',
+    isRight: 'is-right',
+    isRounded: 'is-rounded',
+    isSelected: 'is-selected',
+    isSmall: 'is-small',
+    isStatic: 'is-static',
+    isSuccess: 'is-success',
+    isText: 'is-text',
+    isWarning: 'is-warning',
+    isWhite: 'is-white',
+  };
+
+
+
 const Navbar = () => {
   return (
     <nav className="navbar is-transparent">
@@ -85,8 +116,15 @@ const Navbar = () => {
         <div className="navbar-end">
           <div className="navbar-item">
             <div className="field is-grouped">
-              <p className="control">
-                <a
+
+            <ButtonField type="button is-success is-success" label="Login" />
+            <ButtonField type="button is-rounded my-class is-danger" label="Sign up" />
+                {/* {how to do links? */}
+
+
+
+              {/* <p className="control">
+              <a
                   className="bd-tw-button button"
                   data-social-network="Twitter"
                   data-social-action="tweet"
@@ -110,7 +148,7 @@ const Navbar = () => {
                   </span>
                   <span>Download</span>
                 </a>
-              </p>
+              </p> */}
             </div>
           </div>
         </div>
@@ -136,6 +174,7 @@ const ButtonField = props => {
   );
 };
 
+
 const SignUp = props => {
     return (
       <div>    
@@ -146,6 +185,9 @@ const SignUp = props => {
        </div>
     );
   };
+
+
+  
 
 
 const App = () => {
@@ -164,7 +206,8 @@ const App = () => {
       <ButtonField type="button is-black is-black" label="is black" />
       <ButtonField type="button is-large is-large" label="is large " />
       <ButtonField type="button is-loading is-loading" label="loading" />      
- 
+
+       
       ----------Iteration 4
       <FormField label="Name" type="text" placeholderProps="Iteration 4 > your Name here " />
       <FormField label="Email" type="email" placeholderProps="Iteration 4 >  your email here" />
@@ -172,7 +215,10 @@ const App = () => {
       <ButtonField type="button is-success is-success" label="Iteration 4 >  Sign Up" />
     
       ----------Iteration 5 
-      <SignUp></SignUp>
+      <SignUp/>
+
+ 
+
 
     </div>
   );
