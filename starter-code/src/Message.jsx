@@ -1,17 +1,17 @@
 import React from "react";
 
-const Message = () => {
+const Message = (props) => {
   return (
     <>
-      <article class="message">
-        <div class="message-header">
-          <p>{props.header}}</p>
-          <button class="delete" aria-label="delete"></button>
+      <article className="message">
+        <div className="message-header">
+          <p>{props.title}</p>
+          <button className="delete" aria-label="delete"></button>
         </div>
-        <div class="message-body">
-          {props.message} <strong>{props.strong}</strong>
-        </div>
+        <div className="message-body">{props.children}</div>
       </article>
     </>
   );
 };
+
+export default Message;

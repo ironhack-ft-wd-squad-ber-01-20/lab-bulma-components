@@ -33,11 +33,12 @@ const Navbar = (props) => {
         <div className="navbar-end">
           <div className="navbar-item">
             <div className="field is-grouped">
-              <CoolButton
-                button1="Login"
-                class="button is-rounded my-class is-danger is-small"
-              />
-              <CoolButton button1="Signup" class="button is-small is-success" />
+              <CoolButton className="button is-rounded my-class is-danger is-small">
+                Login
+              </CoolButton>
+              <CoolButton className="button is-small is-success">
+                Signup
+              </CoolButton>
             </div>
           </div>
         </div>
