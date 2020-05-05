@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from "react";
+import CoolButton from "./CoolButton.js"
 
 
 class Navbar extends Component {
@@ -29,13 +30,10 @@ class Navbar extends Component {
             
             <div className="navbar-end">
               <div className="navbar-item">
-                <div className="buttons">
-                  <a className="button is-info">
-                    <span>Login</span>
-                  </a>
-                  <a className="button is-primary" href="/signup">
-                    <span>Signup</span>
-                  </a>
+                <div className="field is-grouped">
+                  <p className="control">
+                    <CoolButton danger="Login" success="Signup"/>
+                  </p>
                 </div>
               </div>
             </div>
