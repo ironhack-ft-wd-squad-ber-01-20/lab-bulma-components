@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import CoolButton from './CoolButton';
 
-const Navbar = () => {
+const Navbar = (props) => {
+    console.log(props);
     return (
         <nav className="navbar is-transparent">
             <div className="navbar-brand">
@@ -54,7 +56,7 @@ const Navbar = () => {
                 <div className="navbar-end">
                     <div className="navbar-item">
                         <div className="field is-grouped">
-                            <p className="control">
+                            {/* <p className="control">
                                 <a className="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet" data-social-target="https://bulma.io" target="_blank" href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=https://bulma.io&amp;via=jgthms">
                                     <span className="icon">
                                         <i className="fab fa-twitter"></i>
@@ -63,13 +65,14 @@ const Navbar = () => {
                                         Tweet
               </span>
                                 </a>
-                            </p>
+                            </p> */}
                             <p className="control">
                                 <a className="button is-primary" href="https://github.com/jgthms/bulma/releases/download/0.9.0/bulma-0.9.0.zip">
                                     <span className="icon">
                                         <i className="fas fa-download"></i>
                                     </span>
-                                    <span>Download</span>
+                                    {/* <span>Download</span> */}
+                                    <CoolButton/>
                                 </a>
                             </p>
                         </div>

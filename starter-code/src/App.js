@@ -4,10 +4,14 @@ import Navbar from './Navbar';
 import SignUp from './SignUp';
 
 const App = () => {
+    const name = {
+        user: 'Tim',
+        email: 'tim.isAwesome@awesome.com'
+    }
     return (
         <div>
-            <Navbar />
-            <SignUp/>
+            <Navbar data={name} />
+            <SignUp />
         </div>
     )
 }
